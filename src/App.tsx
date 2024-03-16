@@ -6,7 +6,7 @@ import { TodoList } from './components/Todo';
 const App = () => {
   return (
     <div className="App">
-      <Profile name='xina'  job='house protector'/>
+      <Profile name='xian'  job='house protector'/>
       <Counter/>
       <TodoList/>
     </div>

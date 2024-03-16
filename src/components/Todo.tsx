@@ -20,12 +20,12 @@ interface todoItemList{
 
 export  function  TodoList () {
     const [todoTitle, setTodoTitle] = useState<todoTitle>({
-        title :""// "할일을 입력하세요"
+        title :""
     })
 
     const [todoItem, setTodoItem] = useState<todoItem>({
         idx : 0,
-        title : "초기값",
+        title : "null",
         isDelete  : false
     })
 
@@ -45,7 +45,7 @@ export  function  TodoList () {
 
     useEffect(() => {
             setTodoTitle({
-             title:""//"할 일을 입력해 주세요"
+             title:""
             })
             setTodoItemList(
                 {
@@ -100,11 +100,11 @@ export  function  TodoList () {
 
     return(
         <div>
-            <h2>할일</h2>
+            <h2>TODO LIST</h2>
             <div>
                 <form onSubmit={onSubmit}>
                     <input type='text' name='content' value={todoTitle.title} placeholder={"할일 입력해"} onChange={handleInput} />
-                    <button type='submit'>추가</button>
+                    <button type='submit'>ADD</button>
                 </form>
             </div>
             <div>

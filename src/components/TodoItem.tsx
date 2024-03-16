@@ -19,7 +19,7 @@ export function TodoItem(props: IList){
                 <div>
                     {props.title}  
                     <button onClick={handleDelete}>
-                        삭제
+                        DEL
                     </button>
                 </div>
             )}
